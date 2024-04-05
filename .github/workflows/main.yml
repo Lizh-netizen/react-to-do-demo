@@ -10,11 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js environment
-        uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8.x
-      - uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.0.2
         with:
           node-version: '18'
           cache: 'pnpm'
